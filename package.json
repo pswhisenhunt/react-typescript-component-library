@@ -1,5 +1,5 @@
 {
-  "name": "react-component-library",
+  "name": "@pswhisenhunt/react-typescript-component-library",
   "version": "0.0.1",
   "description": "A React & TypeScript Component Library",
   "scripts": {
@@ -29,5 +29,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registery": "https://npm.pkg.github.com/pswhisenhunt"
+  }
 }
