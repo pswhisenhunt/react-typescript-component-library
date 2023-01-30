@@ -1,6 +1,6 @@
 {
   "name": "@pswhisenhunt/react-typescript-component-library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A React & TypeScript Component Library",
   "scripts": {
     "rollup": "rollup -c"
