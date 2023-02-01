@@ -7,7 +7,7 @@ export interface ButtonProps {
 
 const Button = (props: ButtonProps) => {
   return (
-    <button className="button">
+    <button data-testid="button" className="button">
       {props.label}
     </button>
   );
