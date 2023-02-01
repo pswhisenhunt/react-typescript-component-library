@@ -1,0 +1,31 @@
+@use "./fonts";
+
+/* Colors */
+$black: rgb(14, 12, 10);
+$white: rgb(255, 255, 255);
+$green: rgb(73, 216, 155);
+$purple: rgb(155, 73, 216);
+$orange: rgb(216, 155, 73);
+$hot-pink: rgb(216, 73, 180);
+$pink-to-purple-gradient: -webkit-linear-gradient(217deg, $hot-pink 0%, $purple 100%);
+$green-to-purple-gradient: -webkit-linear-gradient(127deg, $green 0%, $purple 100%);
+$purple-to-orange-gradient: -webkit-linear-gradient(336deg, $purple 0%, $orange 100% );
+$orange-to-pink-gradient: -webkit-linear-gradient(336deg, $orange 0%, $hot-pink 100%);
+  
+/* Type */
+$text--small: 1em;
+$text--regular: 1.2em;
+$text--medium: 1.8em;
+$text--large: 2.2em;
+$text--extra-large: 3.2em;
+$text--extra-small: 0.8em;
+$text--mobile: 0.5em;
+$text-weight--light: 100;
+$text-weight--regular: 200;
+$text-weight--medium: 400;
+$text-weight--bold: 700;
+
+$font-medium: "Quicksand-Medium";
+$font-light: "Quicksand-Light";
+$font-regular: "Quicksand-Regular";
+$font-title: "Pacifico";

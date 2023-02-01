@@ -1,12 +1,52 @@
-button {
-  font-size: 16px;
-  background-color: rebeccapurple;
-  color: white;
+@use "../../shared/styles/variables";
+
+.button {
+  font-family: variables.$font-medium;
+  color: variables.$white;
+  font-size: variables.$text--small;
+  display: block;
+  width: 10em;
+  height: 3em;
+  position: relative;
+  cursor: pointer;
   border: none;
-  border-radius: 5px;
-  padding: 8px;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  background-color: variables.$hot-pink;
+  background: variables.$orange-to-pink-gradient;
 }
-button:hover {
-  font-size: 18px;
-  box-shadow: 3px 3px rgb(250, 255, 112), -3px -3px rgb(250, 255, 112)
+
+.button:hover {
+  font-family: variables.$font-light;
+  color: variables.$hot-pink;
+  background: transparent;
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background: variables.$hot-pink;
+  box-shadow: -1px -1px 3px #fff,
+              7px 7px 20px 0px #0001,
+              4px 4px 5px 0px #0001;
+}
+
+.button:before {
+  top: 0;
+  right: 0;
+}
+
+.button::after {
+  left: 0;
+  bottom: 0;
+}
+
+.button:hover:before,
+.button:hover:after {
+  width: 100%;
+  transition: all 600ms ease;
 }

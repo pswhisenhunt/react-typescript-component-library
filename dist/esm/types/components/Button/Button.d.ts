@@ -1,6 +1,6 @@
 /// <reference types="react" />
-import "./Button.css";
-interface ButtonProps {
+import "./Button.scss";
+export interface ButtonProps {
     label: string;
 }
 declare const Button: (props: ButtonProps) => JSX.Element;

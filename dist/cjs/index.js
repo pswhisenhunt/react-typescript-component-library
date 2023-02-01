@@ -2837,11 +2837,11 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = "button {\n  font-size: 60px;\n}";
+var css_248z = "/* Colors */\n/* Type */\n.button {\n  display: block;\n  width: 10em;\n  height: 3em;\n  position: relative;\n  cursor: pointer;\n  border: none;\n  border-radius: 3px;\n  text-align: center;\n  text-decoration: none;\n  background-color: rgb(216, 73, 180);\n  background: -webkit-linear-gradient(336deg, rgb(216, 155, 73) 0%, rgb(216, 73, 180) 100%);\n}\n@font-face {\n  .button {\n    font-family: \"Quicksand-Medium\";\n    src: url(\"../../fonts/Quicksand/Quicksand-Medium.ttf\") format(\"truetype\");\n    font-weight: 700;\n    color: rgb(255, 255, 255);\n  }\n}\n\n.button:hover {\n  background: transparent;\n}\n@font-face {\n  .button:hover {\n    font-family: \"Quicksand-Regular\";\n    src: url(\"../../fonts/Quicksand/Quicksand-Regular.ttf\") format(\"truetype\");\n    font-weight: 400;\n    color: rgb(216, 73, 180);\n  }\n}\n\n.button:before,\n.button:after {\n  content: \"\";\n  position: absolute;\n  height: 2px;\n  width: 0;\n  background: rgb(216, 73, 180);\n  box-shadow: -1px -1px 3px #fff, 7px 7px 20px 0px rgba(0, 0, 0, 0.0666666667), 4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);\n}\n\n.button:before {\n  top: 0;\n  right: 0;\n}\n\n.button::after {\n  left: 0;\n  bottom: 0;\n}\n\n.button:hover:before,\n.button:hover:after {\n  width: 100%;\n  transition: all 600ms ease;\n}";
 styleInject(css_248z);
 
 var Button = function (props) {
-    return React.createElement("button", null, props.label);
+    return (React.createElement("button", { className: "button" }, props.label));
 };
 
 exports.Button = Button;
